@@ -436,3 +436,54 @@ com.revature.exception.BankWithdrawException: -1
 3) Deposit money
 4) Log out
 2018-03-11 17:58:15 INFO  Main:81 - Thank you and have a great day!
+2018-03-12 15:55:22 ERROR UserRepositoryjdbc:80 - error while updating balance
+2018-03-12 15:57:11 ERROR UserRepositoryjdbc:80 - error while updating balance
+2018-03-12 15:58:22 ERROR UserRepositoryjdbc:80 - error while updating balance
+2018-03-12 16:06:28 ERROR UserRepositoryjdbc:80 - error while updating balance
+2018-03-12 20:51:28 INFO  Main:19 - Enter your User ID: 
+2018-03-12 20:51:46 INFO  Main:23 - Enter your password: 
+2018-03-12 20:51:50 INFO  Main:27 - Welcome JoelD95! What would you like to do? 
+----------------------------------
+1) View current balance
+2) Withdraw money
+3) Deposit money
+4) Log out
+2018-03-12 20:51:51 INFO  Main:37 - Your balance is: $70.0
+2018-03-12 20:51:51 INFO  Main:27 - Welcome JoelD95! What would you like to do? 
+----------------------------------
+1) View current balance
+2) Withdraw money
+3) Deposit money
+4) Log out
+2018-03-12 20:52:04 INFO  Main:41 - Enter the amount you wish to withdraw.
+2018-03-12 20:52:44 INFO  Main:19 - Enter your User ID: 
+2018-03-12 20:52:50 INFO  Main:23 - Enter your password: 
+2018-03-12 20:52:53 INFO  Main:27 - Welcome JoelD95! What would you like to do? 
+----------------------------------
+1) View current balance
+2) Withdraw money
+3) Deposit money
+4) Log out
+2018-03-12 20:52:57 INFO  Main:41 - Enter the amount you wish to withdraw.
+2018-03-12 20:54:41 INFO  Main:19 - Enter your User ID: 
+2018-03-12 20:54:46 INFO  Main:23 - Enter your password: 
+2018-03-12 20:56:18 INFO  Main:19 - Enter your User ID: 
+2018-03-12 20:56:23 INFO  Main:23 - Enter your password: 
+2018-03-12 20:56:27 INFO  Main:27 - Welcome JoelD95! What would you like to do? 
+----------------------------------
+1) View current balance
+2) Withdraw money
+3) Deposit money
+4) Log out
+2018-03-12 20:56:28 INFO  Main:37 - Your balance is: $70.0
+2018-03-12 20:56:28 INFO  Main:27 - Welcome JoelD95! What would you like to do? 
+----------------------------------
+1) View current balance
+2) Withdraw money
+3) Deposit money
+4) Log out
+2018-03-12 20:56:30 INFO  Main:74 - Thank you and have a great day!
+2018-03-12 20:56:33 INFO  Main:19 - Enter your User ID: 
+2018-03-12 20:56:36 ERROR UserRepositoryjdbc:37 - User not found
+2018-03-12 20:56:36 INFO  Main:23 - Enter your password: 
+2018-03-12 20:58:51 INFO  Main:19 - Enter your User ID: 

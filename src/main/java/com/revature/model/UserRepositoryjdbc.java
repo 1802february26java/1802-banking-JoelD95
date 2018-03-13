@@ -18,8 +18,7 @@ public class UserRepositoryjdbc implements User {
 	}
 
 	@Override
-	public UserInfo getUserName(String userName) throws BankException {
-		String msg="";
+	public UserInfo getUserName(String userName) {
 		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex = 0;
 			String sql = "SELECT * FROM BANK_ACCOUNTS WHERE USER_ID = ?";
@@ -34,9 +33,8 @@ public class UserRepositoryjdbc implements User {
 						result.getString("PASS"),
 						result.getDouble("BALANCE")
 						));
-			}
-			else {
-				throw new BankException(msg);
+			}else {
+				return null;
 			}
 		}catch (SQLException e) {
 			logger.error("Error while selecting all users",e);
@@ -44,7 +42,7 @@ public class UserRepositoryjdbc implements User {
 		return null;
 	}
 	@Override
-	public boolean withdraw(String userName, double withdrawal) throws BankWithdrawException {
+	public boolean withdraw(String userName, double withdrawal)  {
 		String msg="";
 		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex = 0;
@@ -56,9 +54,7 @@ public class UserRepositoryjdbc implements User {
 			if(statement.executeUpdate() != 0) {
 				return true; 
 			}
-			else {
-				throw new BankWithdrawException(msg);
-			}
+			
 		}catch (SQLException e) {
 			logger.error("Error while updating balance",e);
 		}

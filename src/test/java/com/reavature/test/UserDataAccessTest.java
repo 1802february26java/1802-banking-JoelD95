@@ -8,6 +8,9 @@ import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.revature.exception.BankException;
+import com.revature.exception.BankWithdrawException;
 import com.revature.model.User;
 import com.revature.model.UserRepositoryjdbc;
 import com.revature.service.UserInfo;
@@ -16,7 +19,6 @@ public class UserDataAccessTest {
 	private static Logger logger = Logger.getLogger(UserDataAccessTest.class);
 	private User repository;
 	private UserInfo userTest;
-	private UserInfo userTest2;
 	
 	@Before
 	public void setUp() {
@@ -36,11 +38,11 @@ public class UserDataAccessTest {
 		assertTrue(repository.withdraw("JoelD95", userTest.getbalance()-10));
 		assertFalse(repository.withdraw("Bill123", userTest.getbalance()-10));
 	}
-	@Test
-	public void depositeTest() {
-		logger.trace("Testing deposit");
-		assertTrue(repository.deposit("JoelD95", userTest.getbalance()+10));
-		assertFalse(repository.deposit("Bill123", userTest.getbalance()+10));
-	}
+//	@Test
+//	public void depositTest() {
+//		logger.trace("Testing deposit");
+//		assertTrue(repository.deposit("JoelD95", userTest.getbalance()+10));
+//		assertFalse(repository.deposit("Bill123", userTest.getbalance()+10));
+//	}
 
 }
